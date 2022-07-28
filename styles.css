@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Splash&family=Work+Sans&display=swap');
 :root{
     --hero-color: #7550fe;
 }
 
-/* *,*::after,*::after{
+/* main *{
     border: 1px solid black;
     border-radius: 5px;
     box-sizing: border-box;
+    
 } */
 body{    
     display: flex;
     flex-direction: column;    
     height: 100vh;
     width: 100vw;
-    margin: 0;      
+    margin: 0;
+    background-color: #f5f4f8;  
+    font-family: 'Inter', sans-serif;    
+}
+p.text.bold{
+    font-weight: 600;
 }
 
 
@@ -29,6 +36,7 @@ body{
         height: 60px;
         align-items: center;
         gap: 10px;
+        background-color: white;
         }
         .navDesktopMenu{
             margin-right: auto;
@@ -156,30 +164,47 @@ h1{
     .perksContainer{
     display:flex;
     flex-direction: row;
-    justify-content: center;
-
+    justify-content: space-evenly;
+    border-bottom: 2px solid #efecf3;
+    background-color: white;
     }
     .perk1{
     display:flex;
     }
+    .icon01{
+        width: 40%;
+    }
     .perk2{
-    display:flex;
+        display:flex;
+    }
+    .icon02{
+        width: 40%;
     }
     .perk3{
-    display:flex;
+        display:flex;
+    }
+    .icon03{
+        width: 40%;
     }
     .iconContainer{
     display:flex;
-    width: 100px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffeeda;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     }
     .perkTextContainer{
     display:flex;
     flex-direction: column;
+    justify-content: center;    
     }
     .perkTextContainer p{
         margin:0;
+
     }
     .text{
     display:flex;
@@ -190,75 +215,192 @@ h1{
     main{
         display: flex;
         flex-direction: column;
+        background-color: #f5f4f8;
+        font-size: large;
+        font-weight: 600;
+        margin-inline: 10vw;
     }
     .recContainer{
     display:flex;
     flex-direction: column;
+    margin-top: 10vh;
     }
     .containerTitle{
     display:flex;
+    
+    margin-bottom: 20px;
     }
     .cardContainer{
     display:flex;
-    justify-content: center;
-    gap: 10%;
+    justify-content: space-between;
+    height: 40vh;
+    min-height: 250px;
+    max-height: 500px; 
+    
     }
     .card{
     display:flex;
     flex-direction: column;
-    width: 100px;
+    width: 22%;
+    min-width: 120px;
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;  
+    }
+    .card p{
+        margin:0;
     }
     .colorTop{
-    display:flex;
+        display:flex;
+        height: 40%;
+        margin-bottom: 15px;
     }
     .cardImage{
-    display:flex;
+        display:flex;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;        
     }
+    .img01{background-image: url("./assets/course-graphql.jpg");}
+    .img02{background-image: url("./assets/course-javascript.jpg");}
+    .img03{background-image: url("./assets/course-node.jpg");}
+    .img04{background-image: url("./assets/course-laravel.jpg");}
+    .img05{background-image: url("./assets/course-html.jpg");}
+    .img06{background-image: url("./assets/course-javascript.jpg");}
+    .img07{background-image: url("./assets/course-node.jpg");}
+    .img08{background-image: url("./assets/course-react.jpg");}
+    .img09{background-image: url("./assets/course-gatsby.jpg");}
+    .img10{background-image: url("./assets/course-html.jpg");}
+    .img11{background-image: url("./assets/course-node.jpg");}
+    .img12{background-image: url("./assets/course-laravel.jpg");}
+
+    .avatar01{background-image: url("./assets/avatar-5.jpg");}
+    .avatar02{background-image: url("./assets/avatar-6.jpg");}
+    .avatar03{background-image: url("./assets/avatar-3.jpg");}
+    .avatar04{background-image: url("./assets/avatar-7.jpg");}
+    .avatar05{background-image: url("./assets/avatar-4.jpg");}
+    .avatar06{background-image: url("./assets/avatar-6.jpg");}
+    .avatar07{background-image: url("./assets/avatar-3.jpg");}
+    .avatar08{background-image: url("./assets/avatar-2.jpg");}
+    .avatar09{background-image: url("./assets/avatar-6.jpg");}
+    .avatar10{background-image: url("./assets/avatar-4.jpg");}
+    .avatar11{background-image: url("./assets/avatar-3.jpg");}
+    .avatar12{background-image: url("./assets/avatar-7.jpg");}
+    
     .cardMain{
     display:flex;
     flex-direction: column;
-    }
+    margin-inline: 8px;    
+}
     .courseTitle{
-    display:flex;
+        font-size: 10pt;
+        display:inline-flex;
+        margin-block: 20px;
+        
     }
     .courseDetails{
-    display:flex;
+        font-size: 8pt;
+        color: gray;
+        display:flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
+    .tinyClock{
+        height: 15px;
+
+    }
+    .difficultyBars{
+        display: flex;
+        background-image: url("./assets/bar-chart-fill.svg");
+        height: 100%;
+        width: 20px;
+        border-radius: 0;
+        background-repeat: no-repeat;
+    }
+    .bar01{}
+    .bar01{}
+    .bar01{}
+    
     .rating{
     display:flex;
+    margin-top: 5px;
     }
     .price{
     display:flex;
+    font-size: 10pt;
+    font-weight: 400;
     }
+    .starFill{
+        background-image: url("./assets/star-fill.svg");
+        height: 100%;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+        width: 20px;
+    }
+    .starEmpty{
+        background-image: url("./assets/star.svg");
+        height: 100%;
+        border-radius: 0%;
+        background-repeat: no-repeat;
+        width: 20px;
+        
+
+    }
+    .ratingText{color: gold;}
+    .numberOfVotes{color: gray;}
     .cardFooter{
     display:flex;
+    margin-top: auto;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 8px;
     }
     .cardAvatar{
     display:flex;
-    }
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    
+}
     .cardUserName{
     display:flex;
+    font-size: 10pt;
+    padding-left: 10px;
     }
     .bkmkImg{
     display:flex;
+    margin-left: auto;
+    margin-right: 10px;
     }
     .popContainer{
     display:flex;
     flex-direction: column;
+    margin-top: 10vh;
     }
     .trendContainer{
     display:flex;
     flex-direction: column;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
     }
     footer{
         display: flex;
         justify-content: center;
-        
+        background-color: #f5f4f8;
+        margin-top: auto;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
     .footerContainer{
         display: flex;
         flex-direction: row;
-        border-top: 2px solid gray;
+        border-top: 2px solid #efecf3;
         width: 100%;
     }
     .text.copyright{
@@ -269,7 +411,8 @@ h1{
     }
     .footerNav{
     display:flex;
-    justify-content: center;    
+    justify-content: center;
+    gap:4vw;    
     }
 }
 
@@ -285,6 +428,7 @@ h1{
     height: 60px;
     align-items: center;
     gap: 5px;
+    background-color: white;
     }
     .navDesktopMenu{
         display: none;
@@ -411,22 +555,44 @@ h1{
     .perksContainer{
     display:flex;
     flex-direction: column;
+    background-color: white;
+    border-bottom: 2px solid #efecf3;
     }
     .perk1{
     display:flex;
-    }
-    .perk2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10vw;
+}
+.perk2{
     display:flex;
-    }
-    .perk3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10vw;
+}
+.perk3{
     display:flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10vw;
+    }
+    .icon01{
+        width: 40%;
+    }
+    .icon02{
+        width: 40%;
+    }
+    .icon03{
+        width: 40%;
     }
     .iconContainer{
-    display:flex;
-    width: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
+        display:flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ffeeda;
+        justify-content: center;
+        align-items: center;
     }
     .perkTextContainer{
     display:flex;
@@ -444,57 +610,152 @@ h1{
     main{
         display: flex;
         flex-direction: column;
+        background-color: #f5f4f8;
+        font-size: large;
+        font-weight: 600;
+        margin-inline: 10vw;
     }
     .recContainer{
-    display:flex;
-    flex-direction: column;
+        display:flex;
+        flex-direction: column;
     }
     .containerTitle{
-    display:flex;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 0;
+        display:flex;
+
+    
     }
     .cardContainer{
-    display:flex;
-    justify-content: center;
-    gap: 10%;
+        display:flex;
+        justify-content: space-between;
+        height: 40vh;
+        min-height: 250px;
+        max-height: 500px; 
     }
     .card{
-    display:flex;
-    flex-direction: column;
-    width: 100px;
+        display:flex;
+        flex-direction: column;
+        width: 48%;
+        min-width: 120px;
+        max-width: 300px;
+        background-color: white;
+    }
+    .card p{
+        margin:0;
     }
     .colorTop{
-    display:flex;
+        display:flex;
+        height: 40%;
+        margin-bottom: 15px;
     }
     .cardImage{
-    display:flex;
+        display:flex;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
     }
+    .img01{background-image: url("./assets/course-graphql.jpg");}
+    .img02{background-image: url("./assets/course-javascript.jpg");}
+    .img03{background-image: url("./assets/course-node.jpg");}
+    .img04{background-image: url("./assets/course-laravel.jpg");}
+    .img05{background-image: url("./assets/course-html.jpg");}
+    .img06{background-image: url("./assets/course-javascript.jpg");}
+    .img07{background-image: url("./assets/course-node.jpg");}
+    .img08{background-image: url("./assets/course-react.jpg");}
+    .img09{background-image: url("./assets/course-gatsby.jpg");}
+    .img10{background-image: url("./assets/course-html.jpg");}
+    .img11{background-image: url("./assets/course-node.jpg");}
+    .img12{background-image: url("./assets/course-laravel.jpg");}
+    
     .cardMain{
     display:flex;
     flex-direction: column;
+    margin-inline: 5px;
     }
     .courseTitle{
-    display:flex;
+        font-size: 10pt;
+        display:flex;
     }
     .courseDetails{
-    display:flex;
+        font-size: 8pt;
+        color: gray;
+        display:flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
+    .tinyClock{
+        height: 15px;
+
+    }
+    .difficultyBars{
+        display: flex;
+        background-image: url("./assets/bar-chart-fill.svg");
+        height: 100%;
+        width: 20px;
+        border-radius: 0;
+        background-repeat: no-repeat;
+    }
+    .bar01{
+}
+    .bar02{}
+    .bar03{}
     .rating{
-    display:flex;
-    }
-    .price{
-    display:flex;
-    }
+        display:flex;
+        margin-top: 5px;
+        }
+        .price{
+        display:flex;
+        font-size: 10pt;
+        font-weight: 400;
+        }
+        .starFill{
+            background-image: url("./assets/star-fill.svg");
+            height: 100%;
+            border-radius: 0%;
+            background-repeat: no-repeat;
+            width: 20px;
+        }
+        .starEmpty{
+            background-image: url("./assets/star.svg");
+            height: 100%;
+            border-radius: 0%;
+            background-repeat: no-repeat;
+            width: 20px;
+            
+    
+        }
+        .ratingText{color: gold;}
+        .numberOfVotes{color: gray;}
     .cardFooter{
     display:flex;
+    margin-top: auto;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 8px;
     }
     .cardAvatar{
     display:flex;
+    height: 3.5vh;
+    width: 3.5vh;
+    border-radius: 50%;
+    background-image: url("./assets/avatar-2.jpg");
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
     }
     .cardUserName{
     display:flex;
+    font-size: 10pt;
+    padding-left: 10px;
     }
     .bkmkImg{
     display:flex;
+    margin-left: auto;
+    margin-right: 10px;
     }
     .popContainer{
     display:flex;
@@ -508,7 +769,8 @@ h1{
         display: flex;
         align-items: center;
         flex-direction: column;
-        
+        background-color: #f5f4f8;
+        margin-top: auto;
     }
     .footerContainer{
         border-top: 2px solid gray;
