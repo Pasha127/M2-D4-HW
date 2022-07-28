@@ -1,0 +1,527 @@
+:root{
+    --hero-color: #7550fe;
+}
+
+/* *,*::after,*::after{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+} */
+body{    
+    display: flex;
+    flex-direction: column;    
+    height: 100vh;
+    width: 100vw;
+    margin: 0;      
+}
+
+
+
+/* desktop */
+
+@media (min-width:600px) {    
+    .header{
+    display:flex;
+    flex-direction: column;
+    }
+    .nav{
+        display:flex;
+        height: 60px;
+        align-items: center;
+        gap: 10px;
+        }
+        .navDesktopMenu{
+            margin-right: auto;
+            flex-direction: row;
+            display: flex;
+        }
+        .navDesktopMenu i{
+            align-items: center;
+            padding-right: 10px;
+            padding-left: 5px;
+            transform: translateY(32%);
+                        
+        }
+        .logo{
+        display:flex;
+        justify-content: flex-start;
+        width: 40px;
+        height: 40px;
+        background-image: url("./assets/logo.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+        .notification{
+            justify-content: flex-end;
+            display:flex;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #f5f4f8;
+            
+        }
+        .notification i{            
+            transform: translateY(11px);
+        }
+        .notifierCircle{
+            border: 2px solid white;
+            background-color: #7550fe;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display:flex;
+        }
+        
+        .userAvatar{
+            justify-content: flex-end;
+            display:flex;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            align-items: flex-end;
+            background-image: url("./assets/avatar-1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin-right: 10px;
+        }
+        .onlineOrOffline{
+            border: 2px solid white;
+            background-color: #1acb98;
+            display:flex;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        .dropdownMenu{
+            display: none;
+        }
+    .heroContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hero-color);
+}
+.heroTextHalf{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-left: 5vw;
+    
+}
+h1{
+    margin: 0;
+    color: white;
+}
+.splashImg{
+    display: flex;
+    height: calc(.7*40vw);        
+    background-image: url("./assets/hero-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40vw;
+    
+    }
+    .subTitleText{
+    display:flex;
+    color: #baa6ff;
+    }
+    .headerButtonsContainer{
+    display:flex;
+    font-size: 10pt;
+    font-weight: 600;
+    }
+    .headerButton01{
+    display:flex;
+    background-color: #1acb98;
+    border-radius: 4px;
+    margin-right: 5px;
+    }
+    .headerButton01 p{
+        color: white;
+        margin-inline: 1rem;
+    }
+    .headerButton02{
+    display:flex;
+    background-color: white;
+    border-radius: 4px;    
+    }
+    .headerButton02 p{
+        margin-inline: 1rem;
+
+    }
+    .perksContainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    }
+    .perk1{
+    display:flex;
+    }
+    .perk2{
+    display:flex;
+    }
+    .perk3{
+    display:flex;
+    }
+    .iconContainer{
+    display:flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    }
+    .perkTextContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    .perkTextContainer p{
+        margin:0;
+    }
+    .text{
+    display:flex;
+    }
+    .bold{
+    display:flex;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .recContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    .containerTitle{
+    display:flex;
+    }
+    .cardContainer{
+    display:flex;
+    justify-content: center;
+    gap: 10%;
+    }
+    .card{
+    display:flex;
+    flex-direction: column;
+    width: 100px;
+    }
+    .colorTop{
+    display:flex;
+    }
+    .cardImage{
+    display:flex;
+    }
+    .cardMain{
+    display:flex;
+    flex-direction: column;
+    }
+    .courseTitle{
+    display:flex;
+    }
+    .courseDetails{
+    display:flex;
+    }
+    .rating{
+    display:flex;
+    }
+    .price{
+    display:flex;
+    }
+    .cardFooter{
+    display:flex;
+    }
+    .cardAvatar{
+    display:flex;
+    }
+    .cardUserName{
+    display:flex;
+    }
+    .bkmkImg{
+    display:flex;
+    }
+    .popContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    .trendContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .footerContainer{
+        display: flex;
+        flex-direction: row;
+        border-top: 2px solid gray;
+        width: 100%;
+    }
+    .text.copyright{
+        margin-right: auto;
+    }
+    .footerContainer p{
+        margin: 0;
+    }
+    .footerNav{
+    display:flex;
+    justify-content: center;    
+    }
+}
+
+/* Mobile */
+
+@media (max-width:600px) {
+    .header{
+    display:flex;
+    flex-direction: column;
+    }
+    .nav{
+    display:flex;
+    height: 60px;
+    align-items: center;
+    gap: 5px;
+    }
+    .navDesktopMenu{
+        display: none;
+    }
+    .logo{
+    display:flex;
+    margin-right: auto;
+    justify-content: flex-start;
+    width: 40px;
+    height: 40px;
+    background-image: url("./assets/logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    .notification{
+        justify-content: flex-end;
+        display:flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f5f4f8;        
+    }
+    .notification i{            
+        transform: translateY(11px);
+    }
+    .notifierCircle{
+        border: 2px solid white;
+        background-color: #7550fe;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display:flex;
+    }
+    .userAvatar{
+        justify-content: flex-end;
+        display:flex;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        align-items: flex-end;
+        background-image: url("./assets/avatar-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .onlineOrOffline{
+        border: 2px solid white;
+        background-color: #1acb98;
+        display:flex;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    .dropdownMenu{
+        justify-content: center;
+        align-items: center;
+        display:flex;
+        width: 35px;
+        height: 30px;
+        border-radius: 4px;
+        border: 2px solid #7550fe;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .menuBar{
+        margin-block: 1px;
+        background-color: #7550fe;
+        width:20px;
+        height:3px;
+    }
+    .heroContainer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--hero-color);
+    }
+    .splashImg{
+        width: 100vw;
+        height: calc(.7*100vw);
+        background-image: url("./assets/hero-img.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .heroTextHalf{
+        margin-left: 5vw;
+    }
+    h1{
+        color: white;
+        
+    }
+    .subTitleText{
+    display:flex;
+    color: #baa6ff;
+    }
+    .headerButtonsContainer{
+    display:flex;
+    margin-right: auto;
+    font-size: 10pt;
+    font-weight: 600;
+    }
+    .headerButton01{
+    display:flex;
+    background-color: #1acb98;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+.headerButton01 p{
+    color: white;
+    margin-inline: 1rem;
+}
+.headerButton02{
+        border-radius: 4px;
+    display:flex;
+    background-color: white;
+    }
+    .headerButton02 p{
+        margin-inline: 1rem;
+
+    }
+    .perksContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    .perk1{
+    display:flex;
+    }
+    .perk2{
+    display:flex;
+    }
+    .perk3{
+    display:flex;
+    }
+    .iconContainer{
+    display:flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    }
+    .perkTextContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    .perkTextContainer p{
+        margin:2px;
+    }
+    .text{
+    display:flex;
+    }
+    .bold{
+    display:flex;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .recContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    .containerTitle{
+    display:flex;
+    }
+    .cardContainer{
+    display:flex;
+    justify-content: center;
+    gap: 10%;
+    }
+    .card{
+    display:flex;
+    flex-direction: column;
+    width: 100px;
+    }
+    .colorTop{
+    display:flex;
+    }
+    .cardImage{
+    display:flex;
+    }
+    .cardMain{
+    display:flex;
+    flex-direction: column;
+    }
+    .courseTitle{
+    display:flex;
+    }
+    .courseDetails{
+    display:flex;
+    }
+    .rating{
+    display:flex;
+    }
+    .price{
+    display:flex;
+    }
+    .cardFooter{
+    display:flex;
+    }
+    .cardAvatar{
+    display:flex;
+    }
+    .cardUserName{
+    display:flex;
+    }
+    .bkmkImg{
+    display:flex;
+    }
+    .popContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    .trendContainer{
+    display:flex;
+    flex-direction: column;
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .footerContainer{
+        border-top: 2px solid gray;
+        width: 80%;
+    }
+    .footerContainer p{
+        margin: 0;
+    }
+    .footerNav{
+    display:flex;
+    justify-content: center;
+    }
+    .card.forDesktop{
+        display: none;
+    }    
+}
