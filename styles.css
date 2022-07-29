@@ -2,11 +2,13 @@
 :root{
     --hero-color: #7550fe;
 }
+*{
+    box-sizing: border-box;
 
+}
 /* main *{
     border: 1px solid black;
     border-radius: 5px;
-    box-sizing: border-box;
     
 } */
 body{    
@@ -669,6 +671,19 @@ h1{
     .img10{background-image: url("./assets/course-html.jpg");}
     .img11{background-image: url("./assets/course-node.jpg");}
     .img12{background-image: url("./assets/course-laravel.jpg");}
+
+    .avatar01{background-image: url("./assets/avatar-5.jpg");}
+    .avatar02{background-image: url("./assets/avatar-6.jpg");}
+    .avatar03{background-image: url("./assets/avatar-3.jpg");}
+    .avatar04{background-image: url("./assets/avatar-7.jpg");}
+    .avatar05{background-image: url("./assets/avatar-4.jpg");}
+    .avatar06{background-image: url("./assets/avatar-6.jpg");}
+    .avatar07{background-image: url("./assets/avatar-3.jpg");}
+    .avatar08{background-image: url("./assets/avatar-2.jpg");}
+    .avatar09{background-image: url("./assets/avatar-6.jpg");}
+    .avatar10{background-image: url("./assets/avatar-4.jpg");}
+    .avatar11{background-image: url("./assets/avatar-3.jpg");}
+    .avatar12{background-image: url("./assets/avatar-7.jpg");}
     
     .cardMain{
     display:flex;
