@@ -161,7 +161,33 @@ h1{
     }
     .headerButton02 p{
         margin-inline: 1rem;
-
+        
+    }
+    .arrowRight{
+        display: flex;
+        position: absolute;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        transform: translate(83vw, 180px);
+        border: 1px solid #f5f4f8;
+    }
+    .arrowLeft{
+        position: absolute;
+        display: flex;
+        position: absolute;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+        justify-content: center;
+        align-items: center;        
+        transform: translate(-80px, 180px);
+        border: 1px solid #f5f4f8;
+        
     }
     .perksContainer{
     display:flex;
@@ -264,6 +290,10 @@ h1{
         width: 100%;
         background-position: center;
         background-size: cover;        
+    }
+
+    .cardFooter{
+        border-top: 1px solid #f5f4f8;
     }
     .img01{background-image: url("./assets/course-graphql.jpg");}
     .img02{background-image: url("./assets/course-javascript.jpg");}
@@ -398,6 +428,7 @@ h1{
         margin-top: auto;
         margin-left: 5vw;
         margin-right: 5vw;
+        
     }
     .footerContainer{
         display: flex;
@@ -628,6 +659,34 @@ h1{
         display:flex;
 
     
+    }
+    .arrowRight{
+        display: flex;
+        position: absolute;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+        justify-content: center;
+        align-items: center;
+        transform: translate(77vw, 180px);
+        border: 1px solid #f5f4f8;
+    }
+    .arrowLeft{
+        position: absolute;
+        display: flex;
+        position: absolute;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+        justify-content: center;
+        align-items: center;        
+        transform: translate(-20px, 180px);
+        
+    }
+    .cardFooter{
+        border-top: 1px solid #f5f4f8;
     }
     .cardContainer{
         display:flex;
